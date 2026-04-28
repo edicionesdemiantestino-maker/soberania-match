@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bunker-bg: #05070a;
+  --bunker-cta: #f97316;
+  --bunker-accent: #38bdf8;
+
+  --background: var(--bunker-bg);
+  --foreground: #f8fafc;
+  --muted: rgba(248, 250, 252, 0.08);
+  --muted-foreground: rgba(248, 250, 252, 0.6);
+  --card: rgba(248, 250, 252, 0.06);
+  --border: rgba(248, 250, 252, 0.12);
+  --ring: rgba(56, 189, 248, 0.55);
+  --primary: var(--bunker-cta);
+  --primary-foreground: #0b0c10;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    margin: 0;
+  }
+}
+
